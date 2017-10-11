@@ -60,9 +60,11 @@ extension FeaturedViewController: FeaturedView {
     func setLoading(_ loading: Bool) {
         if loading {
             scrollView.isHidden = true
+            loadingView.isHidden = false
             loadingView.startAnimating()
         } else {
             scrollView.isHidden = false
+            loadingView.isHidden = true
             loadingView.stopAnimating()
         }
     }

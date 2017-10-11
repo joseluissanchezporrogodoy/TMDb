@@ -159,6 +159,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		113E4BDB1F8E242D001837BA /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		9923A74B1F8A664C00D3A6F7 /* PosterStripItem+CastMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+CastMember.swift"; sourceTree = "<group>"; };
 		9923A74D1F8A70EA00D3A6F7 /* FeaturedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenterTest.swift; sourceTree = "<group>"; };
 		9923A74F1F8A71DD00D3A6F7 /* DetailNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigatorMock.swift; sourceTree = "<group>"; };
@@ -227,7 +228,6 @@
 		99B9A3371F73CB71004F883E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		99B9A33C1F73F39B004F883E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		99B9A33E1F73F4D0004F883E /* WebServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceConfiguration.swift; sourceTree = "<group>"; };
-		99B9A3461F74072C004F883E /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		99B9A3491F74181A004F883E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		99C5C9041F7B77750038688F /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		99C5C9091F7B78740038688F /* SearchResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsPresenter.swift; sourceTree = "<group>"; };
@@ -566,7 +566,7 @@
 		99B9A3451F74072C004F883E /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				99B9A3461F74072C004F883E /* Keys.xcconfig */,
+				113E4BDB1F8E242D001837BA /* Keys.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -1174,7 +1174,6 @@
 		};
 		9995F3801F73A4E2009BA4D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99B9A3461F74072C004F883E /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1205,7 +1204,6 @@
 		};
 		9995F3811F73A4E2009BA4D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99B9A3461F74072C004F883E /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
