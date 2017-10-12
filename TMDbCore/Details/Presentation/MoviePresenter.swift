@@ -16,13 +16,14 @@ final class MoviePresenter: DetailPresenter {
     private let disposeBag = DisposeBag()
     
     weak var view: DetailView?
-    
-    init(repository: MovieRepositoryProtocol,
+    private let detailNavigator: DetailNavigator
+    init(detailNavigator: DetailNavigator,repository: MovieRepositoryProtocol,
          dateFormatter: DateFormatter,
          identifier: Int64) {
         self.repository = repository
         self.dateFormatter = dateFormatter
         self.identifier = identifier
+        self.detailNavigator = detailNavigator
     }
     
     func didLoad() {
@@ -42,6 +43,9 @@ final class MoviePresenter: DetailPresenter {
     }
     
     func didSelect(item: PosterStripItem) {
+        // TODO: Navigation to person detail
+        detailNavigator.showDetail(withIdentifier: item.identifier,
+                                   mediaType: .person)
     }
     
     private func detailSections(for movie: MovieDetail) -> [DetailSection] {

@@ -10,7 +10,7 @@ import Foundation
 
 struct DetailHeader {
 	let title: String
-	let metadata: String
+	let metadata: String?
 	let posterPath: String?
 	let backdropPath: String?
 }
