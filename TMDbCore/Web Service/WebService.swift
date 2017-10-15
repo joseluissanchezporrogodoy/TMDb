@@ -31,6 +31,7 @@ final internal class WebService {
 
 	init(configuration: WebServiceConfiguration) {
 		self.configuration = configuration
+       
 	}
 
 	func load<T: Decodable>(_ type: T.Type, from endpoint: Endpoint) -> Observable<T> {
@@ -62,6 +63,7 @@ private extension Reactive where Base: URLSession {
 		return Observable.create { observer in
 			let task = self.base.dataTask(with: request) { data, response, error in
 				if let error = error {
+                    print(error)
 					observer.onError(error)
 				} else {
 					guard let httpResponse = response as? HTTPURLResponse else {

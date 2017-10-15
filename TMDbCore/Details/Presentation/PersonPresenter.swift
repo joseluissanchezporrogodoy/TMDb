@@ -52,11 +52,12 @@ final class PersonPresenter: DetailPresenter {
             detailSections.append(.about(title: "Biography", detail: biography))
         }
         
-        // let items = movie.credits?.cast.map { PosterStripItem(castMember: $0) }
         
-        //        if let items = items {
-        //            detailSections.append(.posterStrip(title: "Cast", items: items))
-        //        }
+        let items = person.taggedImages?.results.map { PosterStripItem(image: $0) }
+        
+        if let items = items {
+            detailSections.append(.posterStrip(title: "Images", items: items))
+        }
         
         return detailSections
     }

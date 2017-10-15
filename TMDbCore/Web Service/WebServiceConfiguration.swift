@@ -9,16 +9,17 @@
 import Foundation
 
 internal struct WebServiceConfiguration {
-	let language: String
-	let apiKey: String
-
-	private class Dummy {}
-
-	static let `default` = WebServiceConfiguration(language: Bundle.main.preferredLocalizations[0],
-	                                               apiKey: Bundle(for: WebServiceConfiguration.Dummy.self)
-													.infoDictionary?["TMDB_API_KEY"] as? String ?? "")
-
-	var parameters: [String: String] {
-		return ["api_key": apiKey, "language": language]
-	}
+    let language: String
+    let apiKey: String
+    
+    private class Dummy {}
+    
+    static let `default` = WebServiceConfiguration(language: Bundle.main.preferredLocalizations[0],
+                                                   apiKey: Bundle(for: WebServiceConfiguration.Dummy.self)
+                                                    .infoDictionary?["TMDB_API_KEY"] as? String ?? "")
+    
+    var parameters: [String: String] {
+         return ["api_key": apiKey, "language": language]
+    }
 }
+

@@ -14,12 +14,13 @@ struct PersonDetail: Decodable {
     let birthday: String?
     let biography: String?
     let profilePath: String?
-
+    let taggedImages: TaggedImages?
     private enum CodingKeys: String, CodingKey {
         case identifier = "id"
         case name
         case birthday
         case biography
         case profilePath = "profile_path"
+        case taggedImages = "tagged_images"
     }
 }

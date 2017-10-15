@@ -17,10 +17,10 @@ struct DetailHeader {
 
 struct PosterStripItem {
 	let identifier: Int64
-	let mediaType: MediaType
+	let mediaType: MediaType?
 
-	let title: String
-	let metadata: String
+	let title: String?
+	let metadata: String?
 	let posterPath: String?
 }
 

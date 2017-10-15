@@ -11,6 +11,8 @@
 		113E4BDF1F8F6B7D001837BA /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E4BDE1F8F6B7D001837BA /* PersonRepository.swift */; };
 		113E4BE11F8F6BEE001837BA /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E4BE01F8F6BEE001837BA /* PersonDetail.swift */; };
 		113E4BE31F8FC9A0001837BA /* DetailHeader+PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E4BE21F8FC9A0001837BA /* DetailHeader+PersonDetail.swift */; };
+		11F13E7C1F936A020092B73D /* TaggedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F13E7B1F936A020092B73D /* TaggedImages.swift */; };
+		11F13E7E1F93EB300092B73D /* PosterStripItem+TaggedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F13E7D1F93EB300092B73D /* PosterStripItem+TaggedImages.swift */; };
 		9923A74C1F8A664C00D3A6F7 /* PosterStripItem+CastMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923A74B1F8A664C00D3A6F7 /* PosterStripItem+CastMember.swift */; };
 		9923A74E1F8A70EA00D3A6F7 /* FeaturedPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923A74D1F8A70EA00D3A6F7 /* FeaturedPresenterTest.swift */; };
 		9923A7501F8A71DD00D3A6F7 /* DetailNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923A74F1F8A71DD00D3A6F7 /* DetailNavigatorMock.swift */; };
@@ -163,11 +165,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		113E4BDB1F8E242D001837BA /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		113E4BDC1F8F6B0B001837BA /* PersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
 		113E4BDE1F8F6B7D001837BA /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		113E4BE01F8F6BEE001837BA /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
 		113E4BE21F8FC9A0001837BA /* DetailHeader+PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+PersonDetail.swift"; sourceTree = "<group>"; };
+		11F13E7A1F9293770092B73D /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		11F13E7B1F936A020092B73D /* TaggedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedImages.swift; sourceTree = "<group>"; };
+		11F13E7D1F93EB300092B73D /* PosterStripItem+TaggedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+TaggedImages.swift"; sourceTree = "<group>"; };
 		9923A74B1F8A664C00D3A6F7 /* PosterStripItem+CastMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+CastMember.swift"; sourceTree = "<group>"; };
 		9923A74D1F8A70EA00D3A6F7 /* FeaturedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenterTest.swift; sourceTree = "<group>"; };
 		9923A74F1F8A71DD00D3A6F7 /* DetailNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigatorMock.swift; sourceTree = "<group>"; };
@@ -310,7 +314,9 @@
 				99F056531F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift */,
 				113E4BE21F8FC9A0001837BA /* DetailHeader+PersonDetail.swift */,
 				9923A74B1F8A664C00D3A6F7 /* PosterStripItem+CastMember.swift */,
+				11F13E7D1F93EB300092B73D /* PosterStripItem+TaggedImages.swift */,
 				113E4BE01F8F6BEE001837BA /* PersonDetail.swift */,
+				11F13E7B1F936A020092B73D /* TaggedImages.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -577,7 +583,7 @@
 		99B9A3451F74072C004F883E /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				113E4BDB1F8E242D001837BA /* Keys.xcconfig */,
+				11F13E7A1F9293770092B73D /* Keys.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -907,6 +913,7 @@
 				99C5C9171F7B8E550038688F /* CardPresenter.swift in Sources */,
 				99C5C90A1F7B78740038688F /* SearchResultsPresenter.swift in Sources */,
 				99F0564B1F8A3DBF00A680D8 /* Credits.swift in Sources */,
+				11F13E7E1F93EB300092B73D /* PosterStripItem+TaggedImages.swift in Sources */,
 				99B9A3381F73CB71004F883E /* Endpoint.swift in Sources */,
 				998AD7D81F7FEEF800D3A222 /* MediaType.swift in Sources */,
 				99B9A34A1F74181A004F883E /* Configuration.swift in Sources */,
@@ -949,6 +956,7 @@
 				99A465351F7CDCAD007F3B5B /* DetailAboutView.swift in Sources */,
 				997A44231F7AA75A0094E928 /* Date+Utilities.swift in Sources */,
 				113E4BE11F8F6BEE001837BA /* PersonDetail.swift in Sources */,
+				11F13E7C1F936A020092B73D /* TaggedImages.swift in Sources */,
 				993F1E7A1F7A9AC3004FE33B /* Movie.swift in Sources */,
 				993F1E831F7A9EE3004FE33B /* SearchResult.swift in Sources */,
 				99A4652E1F7CCF93007F3B5B /* DetailViewController.swift in Sources */,
@@ -1190,13 +1198,14 @@
 		};
 		9995F3801F73A4E2009BA4D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F13E7A1F9293770092B73D /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T5TF72MCE6;
+				DEVELOPMENT_TEAM = 57XEBN6426;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1220,13 +1229,14 @@
 		};
 		9995F3811F73A4E2009BA4D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F13E7A1F9293770092B73D /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = T5TF72MCE6;
+				DEVELOPMENT_TEAM = 57XEBN6426;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

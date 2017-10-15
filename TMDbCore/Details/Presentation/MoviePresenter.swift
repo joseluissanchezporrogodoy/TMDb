@@ -43,7 +43,6 @@ final class MoviePresenter: DetailPresenter {
     }
     
     func didSelect(item: PosterStripItem) {
-        // TODO: Navigation to person detail
         detailNavigator.showDetail(withIdentifier: item.identifier,
                                    mediaType: .person)
     }
