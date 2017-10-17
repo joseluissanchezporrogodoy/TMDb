@@ -10,12 +10,20 @@ import Foundation
 
 struct TaggedImages: Decodable {
     struct Image: Decodable {
-        //let identifier: Int64
+        struct TIMediaInfo: Decodable {
+            let identifier: Int64
+            let name: String
+            private enum CodingKeys: String, CodingKey {
+                case identifier = "id"
+                case name = "title"
+                
+            }
+        }
         let filePath: String
-        
+        let media: TIMediaInfo
         private enum CodingKeys: String, CodingKey {
-            //case identifier = "id"
             case filePath = "file_path"
+            case media
         }
     }
     

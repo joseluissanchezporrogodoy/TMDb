@@ -9,9 +9,9 @@
 import Foundation
 extension PosterStripItem {
     init(image: TaggedImages.Image) {
-        identifier = 0
+        identifier = image.media.identifier
         mediaType = nil
-        title = nil
+        title = image.media.name
         metadata = nil
         posterPath = image.filePath
     }
