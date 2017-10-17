@@ -9,7 +9,6 @@
 import Foundation
 extension PosterStripItem {
     init(image: TaggedImages.Image) {
-        // TODO
         identifier = 0
         mediaType = nil
         title = nil

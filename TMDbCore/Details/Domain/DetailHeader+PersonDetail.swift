@@ -13,13 +13,11 @@ extension DetailHeader {
     init(person: PersonDetail, dateFormatter: DateFormatter) {
         title = person.name
         posterPath = person.profilePath
-        backdropPath = nil
-        
-        let releaseDate = person.birthday.flatMap { dateFormatter.date(from: $0)}
-        let year = (releaseDate?.year).map { String($0) }
-        //let duration = "\(movie.runtime) min."
+        if 0 != person.taggedImages?.results.count{
+            backdropPath = person.taggedImages?.results[0].filePath
+        }else{
+            backdropPath = nil
+        }
         metadata = nil
-       // metadata = [year, duration].flatMap { $0 }.joined(separator: " - ")
-       // TODO
     }
 }
